@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BankingProject" verbose="1" parallel="classes"
+	thread-count="1">
+	<test name="BankingProject">	
+		<parameter name="Browser" value="Chrome" />
+		<classes>
+			<class name="com.BankingProj.TestCases.LoginTest">
+				<methods>
+					<include name="enterCredentialsAndClicklogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
